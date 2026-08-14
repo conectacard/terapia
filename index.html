@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+    
+    <!-- Configuración Avanzada Open Graph (OG Share) - Conecta Card Oficial -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://demo-veterinaria.pideya.contact/" />
+    <meta property="og:title" content="CLÍNICA DE FISIOTERAPIA | CONECTA CARD" />
+    <meta property="og:description" content="Expertos en el cuidado integral y la salud de tus mascotas. Agenda tu cita y protege a tu mejor amigo." />
+    
+    <!-- Infraestructura Multimedia Premium de Imagen de Portada -->
+    <meta property="og:image" content="https://demo-veterinaria.pideya.contact/og_veterinario.jpg" />
+    <meta property="og:image:secure_url" content="https://demo-veterinaria.pideya.contact/og_veterinario.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1080" />
+    <meta property="og:image:height" content="1920" />
+    
+    <title>CLÍNICA DE FISIOTERAPIA | CONECTA CARD</title>
+</head>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Bebas+Neue&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+      
+    <button id="btn-audio-control" class="audio-toggle" onclick="toggleAudioGlobal()">
+        <i id="audio-icon" class="fas fa-volume-up"></i>
+    </button>
+
+    <section id="portada-hub" class="main-hub">
+        <header class="magazine-header">
+            <div class="header-title-container">
+                <h1 class="agency-name">PIES SANOS</h1>
+                <div class="download-track-container">
+                    <span class="track-info-txt">CLÍNICA DE FISIOTERAPIA</span>
+                </div>
+            </div>
+            <img src="assets/brand/logo-mini.png" alt="Logo" class="agency-logo">
+        </header>
+
+        <div class="mosaic-grid">
+            <div class="mosaic-item hero-block" onclick="openProfileZoom()">
+                <img id="profile-pic-img" src="assets/hero/main-photo.jpg" alt="PIES SANOS Conecta Card">
+                <div class="hero-overlay">
+                    <span class="edition-label">CLÍNICA DE FISIOTERAPIA</span>
+                    <h2 class="hero-title">FISIO ACTIVE</h2>
+                </div>
+            </div>
+
+            <div class="mosaic-item menu-block">
+                <div class="magazine-menu-grid">
+                    <button class="mag-btn" onclick="showAppContent('cat1')">
+                        <span class="num">01</span> QUIÉNES SOMOS
+                    </button>
+                    <button class="mag-btn" onclick="showAppContent('cat2')">
+                        <span class="num">02</span> ESTO NOS HACE DIFERENTES
+                    </button>
+                    <button class="mag-btn" onclick="showAppContent('cat3')">
+                        <span class="num">03</span> ASISTENTE RAPIDO DE DUDAS
+                    </button>
+                    <button class="mag-btn" onclick="showAppContent('cat4')">
+                        <span class="num">04</span> CONTACTO
+                    </button>
+                </div>
+            </div>
+
+            <div class="mosaic-item video-block" onclick="openYouTubeVideo()">
+                <div class="video-preview" id="yt-iframe-container">
+                    <img src="assets/hero/video-thumb.jpg" alt="Freetime Coffee Video Preview" id="yt-thumb-img">
+                    <div class="yt-play-mini" id="yt-play-icon"><i class="fab fa-youtube"></i></div>
+                </div>
+                <span class="block-label">CLIC PARA REPRODUCIR</span>
+            </div>
+
+            <div class="mosaic-item lead-block">
+                <button type="button" onclick="abrirMenu()" class="btn-shiny-gold shine-effect" style="width: 100%; border: none; cursor: pointer; text-decoration: none; display: block; text-align: center; padding: 15px; font-weight: bold; border-radius: 5px;">
+                    ¡HAZ UNA CITA O VISÍTA NUESTRAS SUCURSALES!
+                </button>
+            </div>
+
+            <div id="miMenuContacto" class="menu-oculto" onclick="cerrarMenu()">
+                <div class="menu-contenido" onclick="event.stopPropagation()">
+
+                    <!-- TÍTULO Y MAPA DE UBICACIÓN -->
+                    <div class="bloque-mapa-guia" style="text-align: center; padding: 5px 0 15px 0; width: 100%;">
+                        <h3 style="font-size: 0.95rem; font-weight: bold; color: #fff; text-transform: uppercase; margin-bottom: 4px; font-family: 'Montserrat', sans-serif;">Encuentra tu clínica dental más cercana</h3>
+                        <p style="font-size: 0.7rem; color: rgba(255,255,255,0.7); margin-bottom: 12px; font-family: 'Montserrat', sans-serif; padding: 0 10px;">Ubica tu posición en el mapa y elige abajo tu sucursal de preferencia.</p>
+                        
+                        <div class="mapa-wrapper" style="width: 100%; border-radius: 8px; overflow: hidden; border: 1px solid #00f0ff; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d59235.91891913165!2d-102.33128453406325!3d21.886407005481742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sclinica%20dental%20aguascalientes!5e0!3m2!1ses-419!2smx!4v1718520000000!5m2!1ses-419!2smx" 
+                                width="100%" 
+                                height="220" 
+                                style="border:0; display: block;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- 1. SUCURSAL UNIVERSIDAD -->
+                    <button class="sucursal-accordion-btn" onclick="toggleSucursalAcordeon('suc1')">1. SUCURSAL UNIVERSIDAD</button>
+                    <div id="suc1-panel" class="sucursal-panel-content">
+                        <div class="sucursal-info-block">
+                            <p class="suc-domicilio"><i class="fas fa-map-marker-alt"></i> Av. Universidad #100, Col. Centro</p>
+                            <p class="suc-horario"><i class="far fa-clock"></i> 9:00 AM a 7:00 PM | <strong>Descansa:</strong> DOMINGO</p>
+                            <div class="suc-tags">
+                                <span class="tag si"><i class="fas fa-tooth"></i> Consulta General</span>
+                                <span class="tag si"><i class="fas fa-stethoscope"></i> Especialidades</span>
+                                <span class="tag no"><i class="fas fa-procedures"></i> Quirófano</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/524491472336" target="_blank" class="btn-menu whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="https://maps.app.goo.gl/puS48gwyXSSeCRcm6" target="_blank" class="btn-menu maps-btn"><i class="fas fa-location-arrow"></i> Cómo Llegar</a>
+                    </div>
+
+                    <!-- 2. SUCURSAL NACOZARI -->
+                    <button class="sucursal-accordion-btn" onclick="toggleSucursalAcordeon('suc2')">2. SUCURSAL NACOZARI</button>
+                    <div id="suc2-panel" class="sucursal-panel-content">
+                        <div class="sucursal-info-block">
+                            <div class="suc-domicilio"><i class="fas fa-map-marker-alt"></i> Av. Héroes de Nacozari #405</div>
+                            <div class="suc-horario"><i class="far fa-clock"></i> 9:00 AM a 7:00 PM | <strong>Descansa:</strong> DOMINGO</div>
+                            <div class="suc-tags">
+                                <span class="tag si"><i class="fas fa-tooth"></i> Consulta General</span>
+                                <span class="tag si"><i class="fas fa-stethoscope"></i> Especialidades</span>
+                                <span class="tag si"><i class="fas fa-procedures"></i> Quirófano</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/524491472336" target="_blank" class="btn-menu whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="https://maps.app.goo.gl/puS48gwyXSSeCRcm6" target="_blank" class="btn-menu maps-btn"><i class="fas fa-location-arrow"></i> Cómo Llegar</a>
+                    </div>
+
+                    <!-- 3. SUCURSAL VILLERIAS -->
+                    <button class="sucursal-accordion-btn" onclick="toggleSucursalAcordeon('suc3')">3. SUCURSAL VILLERIAS</button>
+                    <div id="suc3-panel" class="sucursal-panel-content">
+                        <div class="sucursal-info-block">
+                            <div class="suc-domicilio"><i class="fas fa-map-marker-alt"></i> Calle Villerias #210, Zona Centro</div>
+                            <div class="suc-horario"><i class="far fa-clock"></i> 9:00 AM a 7:00 PM | <strong>Descansa:</strong> DOMINGO</div>
+                            <div class="suc-tags">
+                                <span class="tag si"><i class="fas fa-tooth"></i> Consulta General</span>
+                                <span class="tag si"><i class="fas fa-stethoscope"></i> Especialidades</span>
+                                <span class="tag no"><i class="fas fa-procedures"></i> Quirófano</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/524491472336" target="_blank" class="btn-menu whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="https://maps.app.goo.gl/puS48gwyXSSeCRcm6" target="_blank" class="btn-menu maps-btn"><i class="fas fa-location-arrow"></i> Cómo Llegar</a>
+                    </div>
+
+                    <button onclick="cerrarMenu()" class="btn-cerrar">Cerrar</button>
+                </div>
+            </div>
+
+            <div class="mosaic-item -block" style="display: flex; flex-direction: column; gap: 8px;">
+                <!-- Botón original de compartir -->
+                <button class="btn-magazine-share" style="padding: 10px;" onclick="shareExperienceRobust()">
+                    <i class="fas fa-share-alt"></i> RECOMIÉNDANOS Y COMPARTE
+                </button>
+
+                <!-- Botón Único de Reseñas Directo a Google Maps (Ajustado a ancho completo) -->
+                <div style="margin-bottom: 10px;">
+                    <a href="https://maps.app.goo.gl/9TNtm6o6JKLeprAk9" target="_blank" style="background-color: #1a73e8; color: white; border: none; padding: 12px 8px; border-radius: 6px; font-weight: 600; font-size: 0.8rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; text-decoration: none; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 100%; box-sizing: border-box;">
+                        <i class="fa-solid fa-star" style="color: #fbbc04; font-size: 1rem;"></i> CALIFÍCANOS EN GOOGLE MAPS
+                    </a>
+                </div>
+                        
+                <div class="mosaic-item custom-actions-block">
+                    <div class="credits-altpro-compact">
+                        <span class="produced-by">PRODUCIDA POR CONECTA CARD</span>
+                        <a href="https://wa.me/524491472336" target="_blank" class="altpro-link">
+                            <i class="fab fa-whatsapp"></i> 449 147 2336
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <main id="dynamic-content-layer" class="content-overlay" style="display: none;">
+        <button class="btn-close-circular" onclick="closeAppContent()">×</button>
+        <section class="tab-pane" id="cat1-pane" style="display: none;"><h2 class="pane-title"></h2><div id="grid-cat1" class="carousel-zigzag-grid"></div></section>
+        <section class="tab-pane" id="cat2-pane" style="display: none;"><h2 class="pane-title"></h2><div id="grid-cat2" class="carousel-zigzag-grid"></div></section>
+        <section class="tab-pane" id="cat3-pane" style="display: none;"><h2 class="pane-title"></h2><div id="grid-cat3" class="carousel-zigzag-grid"></div></section>
+        <section class="tab-pane" id="cat4-pane" style="display: none;">
+            <h2 class="pane-title">CONTACTO</h2>
+            <div class="contact-panel-robust">
+                <p class="address-tag"><i class="fas fa-store"></i> ¡Visítanos en cualquiera de nuestras sucursales!</p>
+                <div class="social-vertical-stack">
+                    <a id="link-fb" href="https://www.facebook.com/?locale=es_LA" target="_blank" class="stack-btn fb-color"><i class="fab fa-facebook"></i> FACEBOOK</a>
+                    <a id="link-insta" href="https://www.instagram.com/my_sing_studio/" target="_blank" class="stack-btn insta-color"><i class="fab fa-instagram"></i> INSTAGRAM</a>
+                    <a id="link-web" href="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" target="_blank" class="stack-btn web-color"><i class="fas fa-globe"></i> SITIO WEB</a>
+                </div>
+                <div class="qr-reubicado-container">
+                    <h4 class="qr-section-heading">ESCANEA EL CÓDIGO QR</h4>
+                    <img src="assets/hero/qr.png" alt="QR Local" class="qr-embedded-img">
+                    <a href="assets/hero/qr.png" download="qr.png" class="btn-download-qr-integrated" onclick="playClickSound()">
+                        <i class="fas fa-cloud-download-alt"></i> COMPARTIR QR
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox" class="overlay-modal" style="display: none;" onclick="closeLightbox()">
+        <button class="btn-close-circular" onclick="closeLightbox()">×</button>
+        <div class="zoom-premium-content" onclick="event.stopPropagation()">
+            <button class="btn-nav-lightbox btn-prev" onclick="changeLightboxImage(-1)"><i class="fas fa-chevron-left"></i></button>
+            <div class="zoom-image-wrapper">
+                <img id="lightbox-image" src="" alt="Zoom">
+                <img src="assets/brand/logo-mini.png" class="mini-logo-zoom-overlay">
+            </div>
+            <button class="btn-nav-lightbox btn-next" onclick="changeLightboxImage(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <div id="text-zoom-modal" class="overlay-modal" style="display: none;" onclick="closeTextZoom()">
+        <div class="text-zoom-card" onclick="event.stopPropagation()">
+            <button class="btn-close-circular" style="top:-20px; right:-20px;" onclick="closeTextZoom()">×</button>
+            <div class="card-branding-header" style="display: flex; align-items: center;">
+                <img src="assets/brand/logo-mini.png" class="card-logo" style="width: 40px; margin-right: 10px;">
+                <h3 id="text-zoom-title"></h3>
+            </div>
+            <hr class="gold-divider" style="border: 0; border-top: 1px solid var(--brand-accent); margin: 15px 0;">
+            <div id="text-zoom-content" style="white-space: pre-line;"></div>
+        </div>
+    </div>
+
+    <audio id="sndFxClick" src="assets/sounds/clic.mp3"></audio>
+    
+    <div id="video-lightbox-overlay" class="overlay-modal" style="display:none;" onclick="closeVideoLightbox()">
+        <button class="btn-close-circular" onclick="closeVideoLightbox()">×</button>
+        <div class="zoom-premium-content" onclick="event.stopPropagation()">
+            <div class="zoom-image-wrapper" style="width: 90%; max-width: 600px;">
+                <iframe id="video-lightbox-frame" style="width: 100%; aspect-ratio: 16/9; border: 3px solid var(--brand-accent); border-radius: 10px;" src="" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function abrirAsistente() {
+            document.getElementById('modalAsistente').style.display = 'flex';
+        }
+        function cerrarAsistente() {
+            document.getElementById('modalAsistente').style.display = 'none';
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
